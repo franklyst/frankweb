@@ -1,8 +1,20 @@
 [
+
+    {
+    "title": "Chase & Matthew",
+    "date": "2026-06-16",
+    "desc": "My action 3D project inspirated by jacobcrivera. Biggest project i've ever made",
+    "type": "video",
+    "alt": "plush",
+    "cloudinaryId": "plush_final_newdub_totalfinalshiis_xqcfl9",
+    "customDetails": false,
+    "width": 1080,
+    "height": 1920
+  },
   {
     "title": "Salvage",
     "date": "2025-10-30",
-    "desc": "fnaf salvage vhs video but with my animatronic Terry",
+    "desc": "Fnaf salvage vhs video but with my animatronic Terry",
     "type": "video",
     "alt": "very 'creepy' jumscare",
     "cloudinaryId": "salvageterry",
