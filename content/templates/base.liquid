@@ -43,6 +43,8 @@ eleventyComputed:
     {% include 'templates/css/style.css' %}
   </style>
 
+  <script src="{{ "/kiosk.js" | url }}" defer></script>
+
   <!-- additional stuff (bundle) -->
   {% getBundle "html", "head" %}
 </head>
