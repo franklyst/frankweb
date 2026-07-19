@@ -160,6 +160,8 @@ html {
 
   </style>
 
+  <script src="/frankweb/kiosk.js" defer=""></script>
+
   <!-- additional stuff (bundle) -->
   
 </head>
@@ -169,7 +171,7 @@ html {
   <header class="pageheader">
   <a href="/frankweb/" class="_a-unstyled pageheader__pagetitle">Franta Tomáš</a>
   <ul class="pageheader__links _list-unstyled">
-    <li><a href="https://www.instagram.com/franklys.t" class="icon">
+    <li><a id="instagram-link" data-kioskopen="instagram-popup" href="https://www.instagram.com/franklys.t" class="icon">
         <!-- Social Media Icon Set Made With NiftyButtons.com -->
 <svg class="niftybutton-instagram" data-donate="true" data-tag="ins" data-name="Instagram" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="50px" height="50px" style="width: 50px; height: 50px; display: block; fill: currentColor;">
   <title>Instagram social icon</title>
@@ -179,7 +181,7 @@ html {
 </svg>
 
       </a></li>
-    <li><a href="https://www.pinterest.com/franklyst/random-renders-concepts/" class="icon">
+    <li><a id="pinterest-link" data-kioskopen="pinterest-popup" href="https://www.pinterest.com/franklyst/random-renders-concepts/" class="icon">
         <!-- Social Media Icon Set Made With NiftyButtons.com -->
 <svg class="niftybutton-pinterest" data-donate="true" data-tag="pin" data-name="Pinterest" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="50px" height="50px" style="width: 50px; height: 50px; display: block; fill: currentColor;">
   <title>Pinterest social icon</title>
@@ -188,6 +190,13 @@ html {
 
       </a></li>
   </ul>
+  <dialog id="instagram-popup" closedby="any">
+  <img class="dialogimg" src="https://res.cloudinary.com/dt4tzhayc/image/upload/v1784464452/ResizedImage_2026-07-19_14-33-58_3759.png" alt="instagram qr code for @franklys.t">
+  </dialog>
+  <dialog id="pinterest-popup" closedby="any">
+  <img class="dialogimg" src="https://res.cloudinary.com/dt4tzhayc/image/upload/v1784464368/franklyst_pinqr.png" alt="pinterest qr code for franta's pinterest board">
+  <p>Franta's Pinterest</p>
+</dialog>
 </header>
 <style>
   .pageheader {
@@ -207,6 +216,18 @@ html {
     display: flex;
     gap: 1em;
     margin-block: 0;
+  }
+
+
+  ::backdrop {
+  background-color: black;
+  opacity: 0.75;
+}
+
+  .dialogimg {
+    max-width: min(70dvw, 20rem);
+    max-height: min(70dvh, 20rem);
+    aspect-ratio: 1;
   }
 </style>
 
@@ -228,7 +249,7 @@ html {
 
   </main>
   <footer class="pagefooter">
-  <p class="pagefooter__copyright">Copyright (c) 2026 František Tomáš. All Rights Reserved.</p>
+  <p class="pagefooter__copyright" id="pagefooter__copyright">Copyright (c) 2026 František Tomáš. All Rights Reserved.</p>
 </footer>
 <style>
   .pagefooter {
