@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click to begin - Franta Tomáš</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="preload" as="style" crossorigin="">
+  <link rel="preload" href="https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqQ4E.woff2" crossorigin="" as="font" type="font/woff2">
+  <link rel="preload" href="https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2" crossorigin="" as="font" type="font/woff2">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --color-primary: light-dark(black, white);
+      --color-secondary: light-dark(white, black);
+      --background: light-dark(white, dark);
+    }
+
+    html {
+      font-family: Outfit, serif;
+      /* font-family: "Noto Serif", serif; */
+      font-size: 16px;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    @media (width < 1000px) {
+      body {
+        flex-wrap: wrap;
+      }
+
+      .text {
+        margin-inline-end: 1em;
+      }
+    }
+
+    .frankside {
+      display: grid;
+      justify-content: flex-end;
+    }
+
+    .franta-img {
+      /* height: 100%; */
+      max-width: 30dvw;
+      align-self: end;
+    }
+
+    .text {
+      margin-inline-start: 1em;
+    }
+
+    h1 {
+      font-size: min(90px, 7dvw);
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .franta-name {
+      font-size: 50px;
+      font-size: min(50px, 3.9dvw);
+      text-align: end;
+    }
+
+
+    .docasnaexpozice {
+      font-size: min(60px, 4.7dvw);
+      text-align: center;
+      font-style: italic;
+    }
+
+    @keyframes clicking {
+      from {}
+
+      15% {
+        transform: scale(0.8);
+      }
+
+      40% {
+        transform: scale(1);
+      }
+    }
+
+    .clickimg {
+      height: 300px;
+      align-self: center;
+    }
+
+
+    .clickimg {
+      animation-name: clicking;
+      animation-duration: 1.5s;
+      animation-timing-function: ease;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-fill-mode: none;
+      animation-play-state: running;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .clickimg {
+        filter: invert();
+      }
+    }
+
+    .zacnete {
+      text-align: center;
+
+      &>p {
+        font-size: 30px;
+        margin-block-start: 1em;
+      }
+    }
+  </style>
+  <script defer="">
+    const root = "/frankweb/"
+    function goHome(e) {
+      e.preventDefault()
+      window.location.replace(root)
+    }
+    window.onload = _ => {
+      document.documentElement.requestFullscreen()
+      document.body.oncontextmenu = goHome
+      document.documentElement.addEventListener('click', goHome)
+    }
+  </script>
+</head>
+
+<body>
+  <div class="text">
+    <h1>Počítačová 3D Grafika a Animace</h1>
+    <p class="franta-name">František Tomáš</p>
+    <h2 class="docasnaexpozice">Dočasná Expozice</h2>
+    <div class="zacnete">
+      <img class="clickimg" src="https://res.cloudinary.com/dt4tzhayc/image/upload/v1784584327/clicktobegin.png" alt="">
+      <p>Začněte kliknutím</p>
+    </div>
+  </div>
+  <div class="frankside">
+    <img class="franta-img" src="https://res.cloudinary.com/dt4tzhayc/image/upload/v1784582300/franta.png" alt="Fanta Tomáš">
+  </div>
+</body>
+
+</html>
