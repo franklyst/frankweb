@@ -49,7 +49,7 @@ eleventyComputed:
   {% getBundle "html", "head" %}
 </head>
 
-<body>
+<body data-kioskurl="{{ '/kiosk' | url }}">
   <a href="#main" class="skip-link">Skip to main content</a>
   {% include 'templates/header.liquid' %}
   <main id="main">
