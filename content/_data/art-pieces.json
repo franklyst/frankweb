@@ -1,5 +1,6 @@
 [
 
+
     {
     "title": "me and her",
     "date": "2026-07-20",
@@ -10,8 +11,6 @@
     "width": 1080,
     "height": 1080
     },
-    
-    
     {
     "title": "Chase & Matthew",
     "date": "2026-06-16",
@@ -36,9 +35,9 @@
   },
   {
     "title": "Klubko",
-    "date": "2025-11-07",
+    "date": "2026-05-01",
     "desc": "A school project i did for my Graphics teacher so i could go to Anifilm",
-    "type": "image",
+    "type": "video",
     "alt": "anifilm",
     "cloudinaryId": "anifilm_mndffk",
     "width": 1280,
