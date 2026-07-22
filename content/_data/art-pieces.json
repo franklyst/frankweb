@@ -23,8 +23,18 @@
     "height": 480
   },
   {
-    "title": "Terry the Terrier",
+    "title": "Klubko",
     "date": "2025-11-07",
+    "desc": "A school project i did for my Graphics teacher so i could go to Anifilm",
+    "type": "image",
+    "alt": "anifilm",
+    "cloudinaryId": "anifilm_mndffk",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "title": "Terry the Terrier",
+    "date": "2026-05-01",
     "desc": "Render of my animatronic Terry. My gf picked this name :*",
     "type": "image",
     "alt": "Animatronic Render",
