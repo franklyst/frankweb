@@ -33,13 +33,14 @@
     "width": 640,
     "height": 480
   },
-  {
+    {
     "title": "Klubko",
     "date": "2026-05-01",
     "desc": "A school project i did for my Graphics teacher so i could go to Anifilm",
     "type": "video",
     "alt": "anifilm",
     "cloudinaryId": "anifilm_mndffk",
+    "customDetails": false,
     "width": 1280,
     "height": 960
   },
